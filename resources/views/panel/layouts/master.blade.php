@@ -1,107 +1,317 @@
 <!DOCTYPE html>
-<!-- saved from url=(0030)http://apanel.tnl.ir/shops/add -->
 <html style="height: auto; min-height: 100%;">
-
 <head>
-
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title')</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-
+    <title>@yield('title')</title>
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap-rtl/examples/originals/dist/css/bootstrap-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap-rtl/examples/rtl/rtl.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/bootstrap-rtl.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/fontawesome-iconpicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/bootstrap-datepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/_all-skins.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.grey.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.css')}}">
     @stack('styles')
-
-
-    <!--[if lt IE 9]>
-    <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
-    <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
-    <!--[endif]---->
-
-    <!-- Google Font -->
-
 </head>
 <body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
-<div class="wrapper" style="height: auto; min-height: 100%;">
-    <div class="fixed">
-        <header class="main-header">
-            <a href="http://apanel.tnl.ir/shops/add#" class="logo">
-                <span class="logo-mini">تونل</span>
-                <span class="logo-lg"><b>تونل مال</b></span>
+<div class="wrapper">
+
+    <header class="main-header nav-box">
+        <a href="index2.html" class="logo">
+            <span class="logo-mini margin-top-15"><b>A</b>LT</span>
+            <span class="logo-lg margin-top-15"><b>Admin</b>LTE</span>
+        </a>
+        <nav class="navbar navbar-static-top" role="navigation">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
             </a>
-
-            <nav class="navbar navbar-static-top navbar-default">
-
-                <a href="http://apanel.tnl.ir/shops/add#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <span class="sr-only">Toggle navigation</span>
+            <div class="navbar-custom-menu navbar-box">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                <a class="colorWhite" href="">
+                    خروج
                 </a>
-                <input type="text" class="search-box-menu " name="search" placeholder="جستجو...">
-                <div class="container-fluid pull-left">
-                    <div class="navbar-header">
-                        <a href="http://tunnelmall.com/news" target="_blank">
-                            <span class="margin-left-10 color-white">وبلاگ خبری</span>
-                        </a>
-                        <a href="#"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-chevron-down margin-left-5 color-white" aria-hidden="true"></i>
-                            <span class="margin-left-10 color-white">ادمین</span>
-                            <img class="img-box-menu" src="/img/Mask Group 1.svg">
-                        </a>
-                        <ul class="dropdown-menu submenu-nav">
-                            <div class="dropdown-header text-center bg-color-submenu">
-                                <strong >پروفایل</strong>
-                            </div>
-                            <li class="color-li-menu">
-                                <a href="http://apanel.tnl.ir/logout" class="color-li-menu"><i class="fa fa-sign-out" aria-hidden="true"></i>خروج</a>
-                            </li>
-                            <li class="color-li-menu">
-                                <a href="http://apanel.tnl.ir/change-pass" class="color-li-menu" >  <i class="fa fa-lock" aria-hidden="true"></i>تغییر رمز عبور</a>
-                            </li>
-                        </ul>
-                    </div>
+
+            </div>
+            <div class="navbar-custom-menu navbar-box">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <a href="#" class="colorWhite">تغییر رمز عبور</a>
+            </div>
+            <div class="navbar-custom-menu navbar-box">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="" target="_blank" class="colorWhite">صفحه اصلی</a>
+            </div>
+
+        </nav>
+    </header>
+    <aside class="main-sidebar sidebar-box">
+        <section class="sidebar">
+            <form action="#" method="get" class="sidebar-form">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="جستجو...">
+                    <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+              </span>
                 </div>
+            </form>
+            <ul class="sidebar-menu tree" data-widget="tree">
+                <li class="">
+                    <a href="">
+                        <i class="fa fa-list"></i>
+                        <span> دسته بندی ها </span>
+                    </a>
+                </li>
 
-            </nav>
-        </header>
-    </div>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-cubes"></i>
+                        <span> محصولات </span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-product-hunt"></i> محصولات
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-plus-circle"></i> اضافه کردن محصول
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-bookmark-o"></i>
+                        <span>برندها</span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-product-hunt"></i> برندها
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-plus-circle"></i> اضافه کردن برند
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-    <div class="fixed">
-        <!-- Control Sidebar -->
-        @include('panel.layouts.sidebar')
-    </div>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-tags"></i>
+                        <span> بهینه سازی موتور جستجو </span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-key"></i>
+                                <span> کلمات کلیدی </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-tag"></i>
+                                <span> برچسب ها </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                        <span> فروشگاه ها </span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-shopping-bag"></i> فروشگاه ها
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-plus-circle"></i> اضافه کردن فروشگاه
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-bandcamp" aria-hidden="true"></i>
+                                <span> تجهیزات </span>
+                            </a>
+                        </li>
 
-    <div class="fixed">
-        <div class="content-wrapper">
-            <section class="content-header">
-                @yield('breadcrumb')
-            </section>
+                    </ul>
+                </li>
 
-            <section class="content">
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        <span> اخبار  </span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i> اخبار
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-plus-circle"></i> اضافه کردن خبر
+                            </a>
+                        </li>
 
-                @if ($errors->any())
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-sticky-note-o "></i>
+                        <span> ارتباط با ما </span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-user-circle-o"></i>
+                                <span> نمایندگی ها </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-university"></i>
+                                <span> تامین کننده ها </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-balance-scale"></i>
+                                <span> شکایات و پیگیری </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="fa fa-phone-square"></i>
+                                <span> تماس باما </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-info" aria-hidden="true"></i>
+                        <span>اطلاعات پایه</span>
+                        <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-question "></i>
+                                <span>سوالات متداول</span>
+                                <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="">
+                                    <a href="">
+                                        <i class="fa fa-question "></i> سوالات متداول
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <i class="fa fa-plus-circle"></i> اضافه کردن سوال
+                                    </a>
+                                </li>
 
-                    @foreach ($errors->all() as $error)
-                        <strong style="color:red;">{{ $error }}</strong><br>
-                    @endforeach
-
-                @endif
-
-
-                @yield('content')
-            </section>
-        </div>
-    </div>
-    <footer class="main-footer text-left">
-        <span></span>
-    </footer>
-    <aside class="control-sidebar  control-sidebar-dark"></aside>
-    <div class="control-sidebar-bg">pp</div>
-
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-sticky-note-o"></i>
+                                <span>صفحه ها</span>
+                                <span class="pull-left-container">
+                                    <i class="fa fa-angle-left pull-left"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="">
+                                    <a href="">
+                                        <i class="fa fa-sticky-note-o"></i> صفحه ها
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="">
+                                        <i class="fa fa-plus-circle"></i> اضافه کردن صفحه
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-sliders"></i>
+                                <span> اسلاید شو </span>
+                            </a>
+                        </li>
+                        <li class="navbar-custom-menu">
+                            <a href="" class="colorWhite">
+                                <i class="fa fa-bolt" aria-hidden="true"></i>
+                                <span> قسمت های خاص </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" col-xs-12  center-block cotintPower">
+                    <a href="http://www.cotint.ir/" target="_blank">
+                        <span class="cursor">Powered By </span>
+                        <i class="m-g-10">Cotint</i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 </div>
+<script src="{{ asset('node_modules/bootstrap-rtl/bootstrap/js/tests/vendor/jquery.min.js') }}"></script>
+<script src="{{ asset('node_modules/bootstrap-rtl/examples/originals/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/panel/main.js') }}"></script>
+<script src="{{ asset('js/panel/fontawesome-iconpicker.min.js') }}"></script>
+<script src="{{ asset('js/panel/select2.min.js') }}"></script>
+<script src="{{ asset('js/panel/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('js/panel/jquery.fonticonpicker.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/panel/app.js') }}"></script>
+<script src="{{ asset('js/panel/AdminLTE.js') }}"></script>
 
 @stack('scripts')
-
 </body>
 </html>
