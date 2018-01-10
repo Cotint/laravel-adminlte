@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{asset('node_modules/bootstrap-rtl/examples/originals/dist/css/bootstrap-theme.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap-rtl/examples/originals/dist/css/bootstrap-theme.min.css')}}">
     <link rel="stylesheet" href="{{asset('node_modules/bootstrap-rtl/examples/rtl/rtl.css')}}">
-    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap-theme.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/bootstrap/dist/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/bootstrap-rtl.min.css')}}">
     <link rel="stylesheet" href="{{asset('node_modules/select2/dist/css/select2.min.css')}}">
@@ -21,11 +19,11 @@
     <link rel="stylesheet" href="{{asset('css/panel/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/bootstrap-iconpicker.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/fontawesome-iconpicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.min.css')}}">
     @stack('styles')
 </head>
 <body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
 <div class="wrapper">
-
     <header class="main-header nav-box">
         <a href="index2.html" class="logo">
             <span class="logo-mini margin-top-15"><b>A</b>LT</span>
@@ -297,7 +295,7 @@
 </div>
 <script src="{{ asset('node_modules/bootstrap-rtl/bootstrap/js/tests/vendor/jquery.min.js') }}"></script>
 <script src="{{ asset('node_modules/bootstrap-rtl/examples/originals/dist/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/panel/main.js') }}"></script>
+<script src="{{ asset('js/panel/main.min.js') }}"></script>
 <script src="{{ asset('node_modules/select2/dist/js/select2.min.js') }}"></script>
 <script src="{{ asset('js/panel/bootstrap-iconpicker-iconset-all.min.js') }}"></script>
 <script src="{{ asset('js/panel/bootstrap-iconpicker.min.js') }}"></script>
@@ -305,7 +303,7 @@
 <script src="{{ asset('js/panel/footable.all.min.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/panel/app.js') }}"></script>
-<script src="{{ asset('js/panel/AdminLTE.js') }}"></script>
+<script src="{{ asset('js/panel/AdminLTE.min.js') }}"></script>
 @stack('scripts')
 </body>
 <script>
