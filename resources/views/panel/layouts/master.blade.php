@@ -13,16 +13,14 @@
     <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/AdminLTE.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/bootstrap-rtl.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/fontawesome-iconpicker.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/select2.min.css')}}">
+    <link rel="stylesheet" href="{{asset('node_modules/select2/dist/css/select2.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/bootstrap-datepicker.min.css')}}">
     <link rel="stylesheet" href="{{asset('node_modules/font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/_all-skins.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link rel="stylesheet" href="{{asset('css/panel/style.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.grey.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/panel/jquery.fonticonpicker.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/bootstrap-iconpicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/panel/fontawesome-iconpicker.min.css')}}">
     @stack('styles')
 </head>
 <body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
@@ -42,7 +40,6 @@
                 <a class="colorWhite" href="">
                     خروج
                 </a>
-
             </div>
             <div class="navbar-custom-menu navbar-box">
                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -72,14 +69,13 @@
                         <span> دسته بندی ها </span>
                     </a>
                 </li>
-
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-cubes"></i>
                         <span> محصولات </span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -99,8 +95,8 @@
                         <i class="fa fa-bookmark-o"></i>
                         <span>برندها</span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -115,14 +111,13 @@
                         </li>
                     </ul>
                 </li>
-
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-tags"></i>
                         <span> بهینه سازی موتور جستجو </span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -144,8 +139,8 @@
                         <i class="fa fa-shopping-bag"></i>
                         <span> فروشگاه ها </span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -167,7 +162,6 @@
 
                     </ul>
                 </li>
-
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-comment-o" aria-hidden="true"></i>
@@ -187,7 +181,6 @@
                                 <i class="fa fa-plus-circle"></i> اضافه کردن خبر
                             </a>
                         </li>
-
                     </ul>
                 </li>
                 <li class="treeview">
@@ -230,8 +223,8 @@
                         <i class="fa fa-info" aria-hidden="true"></i>
                         <span>اطلاعات پایه</span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="treeview">
@@ -299,19 +292,26 @@
                 </li>
             </ul>
         </section>
+
     </aside>
 </div>
 <script src="{{ asset('node_modules/bootstrap-rtl/bootstrap/js/tests/vendor/jquery.min.js') }}"></script>
 <script src="{{ asset('node_modules/bootstrap-rtl/examples/originals/dist/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/panel/main.js') }}"></script>
-<script src="{{ asset('js/panel/fontawesome-iconpicker.min.js') }}"></script>
-<script src="{{ asset('js/panel/select2.min.js') }}"></script>
-<script src="{{ asset('js/panel/bootstrap-datepicker.min.js') }}"></script>
+<script src="{{ asset('node_modules/select2/dist/js/select2.min.js') }}"></script>
+<script src="{{ asset('js/panel/bootstrap-iconpicker-iconset-all.min.js') }}"></script>
+<script src="{{ asset('js/panel/bootstrap-iconpicker.min.js') }}"></script>
 <script src="{{ asset('js/panel/jquery.fonticonpicker.min.js') }}"></script>
+<script src="{{ asset('js/panel/footable.all.min.js') }}"></script>
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/panel/app.js') }}"></script>
 <script src="{{ asset('js/panel/AdminLTE.js') }}"></script>
-
 @stack('scripts')
 </body>
+<script>
+    $(document).ready(function () {
+        $('.my').on('iconpickerSelected', function(event){
+        });
+    });
+</script>
 </html>
