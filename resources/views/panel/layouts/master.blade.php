@@ -293,6 +293,24 @@
 
     </aside>
 </div>
+<div class="fixed">
+    <div class="content-wrapper" style="min-height: 524px;">
+        @yield('breadcrumb')
+        @yield('content')
+    </div>
+</div>
+
+<footer class="main-footer text-left">
+            <span>
+
+            </span>
+</footer>
+<aside class="control-sidebar  control-sidebar-dark">
+
+</aside>
+<div class="control-sidebar-bg">
+
+</div>
 <script src="{{ asset('node_modules/bootstrap-rtl/bootstrap/js/tests/vendor/jquery.min.js') }}"></script>
 <script src="{{ asset('node_modules/bootstrap-rtl/examples/originals/dist/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/panel/main.min.js') }}"></script>
