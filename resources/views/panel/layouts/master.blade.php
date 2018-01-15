@@ -62,7 +62,7 @@
             </form>
             <ul class="sidebar-menu tree" data-widget="tree">
                 <li class="">
-                    <a href="">
+                    <a href="{{ route('categories.index') }}">
                         <i class="fa fa-list"></i>
                         <span> دسته بندی ها </span>
                     </a>
@@ -125,7 +125,7 @@
                             </a>
                         </li>
                         <li class="">
-                            <a href="">
+                            <a href="{{ route('tags.index') }}">
                                 <i class="fa fa-tag"></i>
                                 <span> برچسب ها </span>
                             </a>
