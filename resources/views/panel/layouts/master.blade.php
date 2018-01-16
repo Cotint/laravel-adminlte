@@ -47,7 +47,6 @@
                 <i class="fa fa-home" aria-hidden="true"></i>
                 <a href="" target="_blank" class="colorWhite">صفحه اصلی</a>
             </div>
-
         </nav>
     </header>
     <aside class="main-sidebar sidebar-box">
@@ -157,7 +156,6 @@
                                 <span> تجهیزات </span>
                             </a>
                         </li>
-
                     </ul>
                 </li>
                 <li class="treeview">
@@ -165,8 +163,8 @@
                         <i class="fa fa-comment-o" aria-hidden="true"></i>
                         <span> اخبار  </span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -186,8 +184,8 @@
                         <i class="fa fa-sticky-note-o "></i>
                         <span> ارتباط با ما </span>
                         <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
+                            <i class="fa fa-angle-left pull-left"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
@@ -244,7 +242,6 @@
                                         <i class="fa fa-plus-circle"></i> اضافه کردن سوال
                                     </a>
                                 </li>
-
                             </ul>
                         </li>
                         <li class="treeview">
@@ -275,7 +272,7 @@
                             </a>
                         </li>
                         <li class="navbar-custom-menu">
-                            <a href="" class="colorWhite">
+                            <a href="{{ route('options.index') }}" class="colorWhite">
                                 <i class="fa fa-bolt" aria-hidden="true"></i>
                                 <span> قسمت های خاص </span>
                             </a>
@@ -290,26 +287,13 @@
                 </li>
             </ul>
         </section>
-
     </aside>
 </div>
 <div class="fixed">
-    <div class="content-wrapper" style="min-height: 524px;">
+    <div class="content-wrapper wrapper-height" style="min-height: 224px;">
         @yield('breadcrumb')
         @yield('content')
     </div>
-</div>
-
-<footer class="main-footer text-left">
-            <span>
-
-            </span>
-</footer>
-<aside class="control-sidebar  control-sidebar-dark">
-
-</aside>
-<div class="control-sidebar-bg">
-
 </div>
 <script src="{{ asset('node_modules/bootstrap-rtl/bootstrap/js/tests/vendor/jquery.min.js') }}"></script>
 <script src="{{ asset('node_modules/bootstrap-rtl/examples/originals/dist/js/bootstrap.min.js') }}"></script>
@@ -319,7 +303,7 @@
 <script src="{{ asset('js/panel/bootstrap-iconpicker.min.js') }}"></script>
 <script src="{{ asset('js/panel/jquery.fonticonpicker.min.js') }}"></script>
 <script src="{{ asset('js/panel/footable.all.min.js') }}"></script>
-<script src="{{ asset('js/app.js') }}"></script>
+{{--<script src="{{ asset('js/app.js') }}"></script>--}}
 <script src="{{ asset('js/panel/app.js') }}"></script>
 <script src="{{ asset('js/panel/AdminLTE.min.js') }}"></script>
 @stack('scripts')
@@ -328,6 +312,11 @@
     $(document).ready(function () {
         $('.my').on('iconpickerSelected', function(event){
         });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('.select-form').select2();
     });
 </script>
 </html>
