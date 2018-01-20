@@ -37,9 +37,9 @@
                         </div>
                         <div class="col-sm-6 form-group col-md-6 col-xs-12">
                             <div class="input-group ">
-                                        <span class="input-group-addon pad-twitter">
-                                        <i class="fa fa-twitter"></i>
-                                        </span>
+                                <span class="input-group-addon pad-twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </span>
                                 <input id="url_twitter" type="text" class="form-control ltr" placeholder="twitter"
                                        name="url_twitter" value="">
                             </div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="pull-left">
-                        <button type="submit" class="btn bg-purple ">
+                        <button type="submit" class="btn btn-Gray-panel">
                             <i class="fa fa-floppy-o" aria-hidden="true"></i>
                             ذخیره
                         </button>
@@ -104,14 +104,14 @@
                 </div>
                 <div class="card-body">
                     <div class="col-md-12 col-xs-12">
-                        <div class="col-md-6 col-xs-12 form-group  ">
+                        <div class="col-md-12 col-xs-12 form-group  ">
                             <div class="form-group">
                                 <label for="title">اسم سایت</label>
                                 <input id="site_title" type="text" class="form-control ltr" placeholder="Site name"
                                        name="site_title" value="">
                             </div>
                         </div>
-                        <div class="col-md-6 col-xs-12 form-group">
+                        <div class="col-md-12 col-xs-12 form-group">
                             <div class="form-group">
                                 <label for="title">کلمات کلیدی سایت</label>
                                 <select class="select-form form-control body-color" name="keywords[]" multiple="multiple" >

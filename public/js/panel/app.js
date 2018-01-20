@@ -26,7 +26,22 @@ setTimeout(function() {
 }, 1500); // <-- time in milliseconds
 
 
-
+$(document).ready(function () {
+    $(".bread-hover").mouseover(function () {
+        $("a.display-none").show();
+    });
+    $(".bread-hover").mouseout(function () {
+        setTimeout(function () {
+            $('a.homeClass').hide();
+        }, 3000);
+    });
+    $(".collapse-title").click(function () {
+        $(".overlay").fadeToggle();
+    });
+    $(".accordian-arrow").click(function () {
+        $(".fa-minus").toggle();
+    });
+});
 
 
 
