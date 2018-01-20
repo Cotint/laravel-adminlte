@@ -25,7 +25,7 @@
 <body class="skin-blue sidebar-mini" style="height: auto; min-height: 100%;">
 <div class="wrapper">
     <header class="main-header nav-box">
-        <a href="index2.html" class="logo">
+        <a href="" class="logo">
             <span class="logo-mini margin-top-15"><b>A</b>LT</span>
             <span class="logo-lg margin-top-15"><b>Admin</b>LTE</span>
         </a>
@@ -68,48 +68,6 @@
                 </li>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-cubes"></i>
-                        <span> محصولات </span>
-                        <span class="pull-left-container">
-                            <i class="fa fa-angle-left pull-left"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-product-hunt"></i> محصولات
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-plus-circle"></i> اضافه کردن محصول
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-bookmark-o"></i>
-                        <span>برندها</span>
-                        <span class="pull-left-container">
-                            <i class="fa fa-angle-left pull-left"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-product-hunt"></i> برندها
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-plus-circle"></i> اضافه کردن برند
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
                         <i class="fa fa-tags"></i>
                         <span> بهینه سازی موتور جستجو </span>
                         <span class="pull-left-container">
@@ -118,98 +76,9 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class="">
-                            <a href="">
-                                <i class="fa fa-key"></i>
-                                <span> کلمات کلیدی </span>
-                            </a>
-                        </li>
-                        <li class="">
                             <a href="{{ route('tags.index') }}">
                                 <i class="fa fa-tag"></i>
                                 <span> برچسب ها </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-shopping-bag"></i>
-                        <span> فروشگاه ها </span>
-                        <span class="pull-left-container">
-                            <i class="fa fa-angle-left pull-left"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-shopping-bag"></i> فروشگاه ها
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-plus-circle"></i> اضافه کردن فروشگاه
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-bandcamp" aria-hidden="true"></i>
-                                <span> تجهیزات </span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-comment-o" aria-hidden="true"></i>
-                        <span> اخبار  </span>
-                        <span class="pull-left-container">
-                            <i class="fa fa-angle-left pull-left"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-comment-o" aria-hidden="true"></i> اخبار
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-plus-circle"></i> اضافه کردن خبر
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-sticky-note-o "></i>
-                        <span> ارتباط با ما </span>
-                        <span class="pull-left-container">
-                            <i class="fa fa-angle-left pull-left"></i>
-                        </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-user-circle-o"></i>
-                                <span> نمایندگی ها </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-university"></i>
-                                <span> تامین کننده ها </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-balance-scale"></i>
-                                <span> شکایات و پیگیری </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="">
-                                <i class="fa fa-phone-square"></i>
-                                <span> تماس باما </span>
                             </a>
                         </li>
                     </ul>
@@ -223,54 +92,6 @@
                         </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-question "></i>
-                                <span>سوالات متداول</span>
-                                <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li class="">
-                                    <a href="">
-                                        <i class="fa fa-question "></i> سوالات متداول
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="">
-                                        <i class="fa fa-plus-circle"></i> اضافه کردن سوال
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-sticky-note-o"></i>
-                                <span>صفحه ها</span>
-                                <span class="pull-left-container">
-                                    <i class="fa fa-angle-left pull-left"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li class="">
-                                    <a href="">
-                                        <i class="fa fa-sticky-note-o"></i> صفحه ها
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="">
-                                        <i class="fa fa-plus-circle"></i> اضافه کردن صفحه
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fa fa-sliders"></i>
-                                <span> اسلاید شو </span>
-                            </a>
-                        </li>
                         <li class="navbar-custom-menu">
                             <a href="{{ route('options.index') }}" class="colorWhite">
                                 <i class="fa fa-bolt" aria-hidden="true"></i>

@@ -398,7 +398,7 @@ td {
     color: #333;
 }
 .btn-edit {
-    background-color: #605ca8;
+    background-color: #cdd035;
     color: #FFF !important;
 }
 .btn-remove {
@@ -495,11 +495,11 @@ td {
 }
 
 input:checked + .slider {
-    background-color: #605ca8;
+    background-color: #cdd035;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #605ca8;
+    box-shadow: 0 0 1px #cdd035;
 }
 
 input:checked + .slider:before {
@@ -558,11 +558,11 @@ label {
     display: none;
 }
 .breadcrumb a {
-    color: #605ca8;
+    color: #cdd035;
     margin-right: 5px;
 }
 .breadcrumb i {
-    color: #605ca8;
+    color: #cdd035;
 }
 .fixed {
     margin-top: -15px;
@@ -639,7 +639,7 @@ textarea {
 }
 .select2-selection__choice {
     margin-top: 3px !important;
-    background-color: #605ca8 !important;
+    background-color: #cdd035 !important;
 }
 .img-select {
     margin-top:15px;
@@ -648,7 +648,32 @@ textarea {
 .wrapper-height {
     min-height: 100% !important;
 }
-
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    margin-right: 8px;
+}
+button, input, select, textarea {
+    font-family: sans !important;
+}
+.dropdown-menu {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+.skin-blue .main-header .navbar {
+    background-color: #cdd035;
+}
+.skin-blue .main-header .logo {
+    background-color: #cdd035;
+}
+.skin-blue .main-header .logo:hover {
+    background-color: #cdd035;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #cdd035;
+}
+.btn-Gray-panel {
+    background-color: #bebebf !important;
+    color: #fff;
+}
 
 
 

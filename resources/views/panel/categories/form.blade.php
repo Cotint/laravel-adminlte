@@ -12,14 +12,14 @@
     <div class="col-md-12">
         <div class="col-md-6 col-xs-12 form-group">
             <div class="pull-left">
-                <button type="submit" id="audit_submit" class="btn bg-purple ">
+                <button type="submit" id="audit_submit" class="btn btn-Gray-panel ">
                     <i class="fa fa-floppy-o" aria-hidden="true"></i>
     ذخیره            </button>
                 <a href="#" class="btn btn-default ">
                     <i class="fa fa-arrow-left " aria-hidden="true"></i>
                     بازگشت
                 </a>
-                <a href="#" class="btn bg-purple">
+                <a href="#" class="btn btn-Gray-panel">
                     <i class="fa fa-plus"></i>
                 </a>
             </div>
@@ -90,7 +90,7 @@
                                     <br>
                                     <button data-selected="graduation-cap"
                                             type="button"
-                                            class="icp icon-Picker btn bg-purple dropdown-toggle iconpicker-component"
+                                            class="icp icon-Picker btn btn-Gray-panel dropdown-toggle iconpicker-component"
                                             data-toggle="dropdown"
                                             name="icon"
                                             role="iconpicker"
@@ -98,8 +98,8 @@
                                             data-icon=""
                                             data-search="true"
                                             data-search-text="جستجوی آیکون"
-                                            data-arrow-prev-icon-class="glyphicon glyphicon-chevron-left"
-                                            data-arrow-next-icon-class="glyphicon glyphicon-chevron-right"
+                                            data-arrow-prev-icon-class="glyphicon glyphicon-chevron-right"
+                                            data-arrow-next-icon-class="glyphicon glyphicon-chevron-left"
                                             data-rows="4"
                                             data-cols="8"
                                             data-align="center">

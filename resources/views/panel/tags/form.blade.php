@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12 form-group margin-top-20">
-                        <button class="btn bg-purple audit_submit" id="btnKeyword" type="submit">
+                        <button class="btn btn-Gray-panel audit_submit" id="btnKeyword" type="submit">
                             <i class="fa fa-check"aria-hidden="true"></i>
                             ثبت
                         </button>
