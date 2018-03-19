@@ -126,7 +126,7 @@
 <script src="{{ asset('js/panel/footable.all.min.js') }}"></script>
 {{--<script src="{{ asset('js/app.js') }}"></script>--}}
 <script src="{{ asset('js/panel/app.js') }}"></script>
-<script src="{{ asset('js/panel/AdminLTE.min.js') }}"></script>
+<script src="{{ asset('js/panel/adminlte.min.js') }}"></script>
 @stack('scripts')
 </body>
 <script>
